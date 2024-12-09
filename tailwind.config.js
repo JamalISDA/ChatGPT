@@ -1,3 +1,7 @@
+// tailwind.config.js
+import typography from '@tailwindcss/typography';
+import autoprefixer from 'autoprefixer';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -12,13 +16,13 @@ export default {
       colors: {
         'app-gray-1': '#171717',
         'app-gray-2': '#212121',
-        'app-gray-3': '#2f2f2f;',
+        'app-gray-3': '#2f2f2f',
         'app-active': '#10a37f',
       }
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
-    require('autoprefixer'),
+    typography,
+    autoprefixer,
   ],
-}
+};
